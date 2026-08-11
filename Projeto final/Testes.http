@@ -1,0 +1,117 @@
+
+POST http://127.0.0.1:5000/autores
+Content-Type: application/json
+
+{
+    "nome": "Machado de Assis"
+}
+
+
+POST http://127.0.0.1:5000/autores
+Content-Type: application/json
+
+{
+    "nome": "Jorge Amado"
+}
+
+
+
+GET http://127.0.0.1:5000/autores
+
+
+
+PUT http://127.0.0.1:5000/autores/1
+Content-Type: application/json
+
+{
+    "nome": "Machado de Assis"
+}
+
+PUT http://127.0.0.1:5000/autores/999
+Content-Type: application/json
+
+{
+    "nome": "Teste"
+}
+
+
+
+
+POST http://127.0.0.1:5000/livros
+Content-Type: application/json
+
+{
+    "titulo": "Dom Casmurro",
+    "ano": 1899,
+    "autor_id": 1
+}
+
+
+
+POST http://127.0.0.1:5000/livros
+Content-Type: application/json
+
+{
+    "titulo": "Capitaes da Areia",
+    "ano": 1937,
+    "autor_id": 2
+}
+
+
+
+GET http://127.0.0.1:5000/livros
+
+
+
+PUT http://127.0.0.1:5000/livros/1
+Content-Type: application/json
+
+{
+    "titulo": "Dom Casmurro - Edicao Nova",
+    "ano": 1900,
+    "autor_id": 1
+}
+
+
+
+PUT http://127.0.0.1:5000/livros/999
+Content-Type: application/json
+
+{
+    "titulo": "Teste",
+    "ano": 2000,
+    "autor_id": 1
+}
+
+
+
+
+GET http://127.0.0.1:5000/livros/detalhes
+
+
+
+
+
+GET http://127.0.0.1:5000/autores/1/livros
+
+
+
+GET http://127.0.0.1:5000/livros/buscar?titulo=Dom
+
+
+
+GET http://127.0.0.1:5000/livros/buscar
+
+
+
+
+
+DELETE http://127.0.0.1:5000/livros/1
+
+
+
+DELETE http://127.0.0.1:5000/livros/999
+
+
+
+DELETE http://127.0.0.1:5000/autores/2
